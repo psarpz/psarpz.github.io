@@ -1,0 +1,98 @@
+body {
+    background-image: url("img6.jpg");
+
+    
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+
+.myheadercss {
+    color: white;
+    position:relative;
+}
+
+.headerpicture {
+width: 100%;
+}
+
+.myfootercss {
+    background-color: black;
+    height: 150px;
+}
+
+.mycontent {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    
+}
+
+.myhomepagelinkscss {
+    
+    text-align:center;
+    margin: 25px;
+}
+
+
+
+#myHLinksID {
+    background-color:grey;  
+    position: relative;
+    float:right;
+    text-decoration:none;
+}
+
+
+
+h2 {
+    position:absolute;
+    top:50%;
+    left: 40%;
+    text-align:center;
+    font: bold 2.5rem Arial,"Times New Roman", sans-serif;
+}
+
+.sm {
+    position: absolute;
+    bottom:0px;
+
+
+}
+
+.changeS {
+  
+    img:hover{
+
+        height: 500px;
+    }
+
+}
+
+
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    width: white;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}

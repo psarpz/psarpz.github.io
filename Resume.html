@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-bottom" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="fun.html">Fun</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <!-- `grid-x` represents a row -->
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-12 large-12" style="background-color: #ADD8E6;">
+
+                        <table style="border: 2px dashed black;">
+                            <thead>
+                                <tr>
+                                    <td colspan="2" style="text-align:center; background-color: black; color: white;">
+                                        <h3>Resume</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="text-align:center;">
+                                        <h4>Prince Sarpong</h4>
+                                        <p>Address: 15824 Gooseberry Way, Apple Valley, Mn 55124</p>
+                                        <p>Email: sarp4474@stthomas.edu</p>
+                                        <p>Phone: 952-217-7319</p>
+                                    </td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr><td colspan="2" style="text-align: center;"><b>Education</b></td></tr>
+                                <tr><td colspan="2">University Of St.Thomas, St Paul, Mn <span style="padding-left:250px;">Anticipated Graduation: May 2024</span> <br />Bachelor of Computer Science</td></tr>
+                                <tr><td colspan="2">Anoka Technical College, Anoka, Mn <span style="padding-left: 250px;"> Graduation date: May 2020 </span> <br />Associate of Applied Science(AAS) in Software Development</td></tr>
+                            
+                                <tr><td colspan="2" style="text-align: center;"><b>Work Experience</b></td></tr>
+                                <tr>
+                                    <td>Maximus Help Desk Service. May 2021 - Present</td>
+                                    <td>
+                                        <ul>
+                                            <li>Assist non maximus and maximus employees with I.T related issues: Unlocking domain, resetting password and general troubleshooting to solve issues hampering employees from doing their daily duties </li>
+                                            <li>Provide front-line technical support to end-users via phone, email, and in person, resolving hardware and software issues promptly.</li>
+                                            <li>Diagnose and troubleshoot network connectivity problems, ensuring seamless access to resources and services.</li>
+                                            <li>Manage user accounts, including creating, modifying, and terminating accounts, and reset passwords as needed using active directory</li>
+                                            <li>Deploy and maintain Windows and macOS operating systems, as well as various software applications.</li>
+                                            <li>Maintain hardware inventory, conduct routine audits, and recommend hardware upgrades and replacements to improve efficiency.</li>
+                                            <li>Collaborate with cross-functional teams to implement and enforce security measures, including antivirus software, firewalls, and encryption.</li>
+                                            <li>Develop and update technical documentation, user guides, and knowledge base articles to facilitate user self-help and streamline support processes.</li>
+                                            <li>Conduct training sessions for end-users to enhance their technical proficiency and foster IT best practices.</li>
+                                            <li>Ensure compliance with industry regulations and standards, including GDPR and HIPAA, and assist in audits to maintain data integrity.</li>
+
+                                        </ul>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Skills</td>
+                                    <td>
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>Python</li>
+                                            <li>Amazon Workspaces(AWS)</li>
+                                            <li>Microsoft Office Suite</li>
+                                            <li>Html and Css</li>
+                                            <li>SQL</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Honors</td>
+                                    <td>
+                                        <ul>
+                                            <li>Phi Theta Kappa</li>
+
+                                        </ul>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                   
+                </div>
+
+               
+
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
