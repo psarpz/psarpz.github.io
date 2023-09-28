@@ -1,15 +1,12 @@
 body {
     background-image: url("img6.jpg");
+    font-family: 'Courier New', Courier, monospace;
 
     
 }
 
 .header-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
     text-align: center; 
 }
 
@@ -19,10 +16,11 @@ body {
     position:relative;
 }
 
+/*
 .headerpicture {
 width: 100%;
 }
-
+*/
 .myfootercss {
     background-color: black;
     height: 150px;
@@ -68,11 +66,18 @@ h2 {
 
 .changeS {
   
-    img:hover{
-
-        height: 500px;
+    img :hover{
+        height: 130px;
+        border: 2px solid black;
+       
     }
 
+}
+
+
+
+#myStoryContent:target {
+    display: block;
 }
 
 

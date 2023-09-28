@@ -11,14 +11,14 @@
     <div class="off-canvas-wrapper">
 
         <!--Homepage Navbar-->
-        <div class="off-canvas position-bottom" id="offCanvas" data-off-canvas>
+        <div class="off-canvas position-top" id="offCanvas" data-off-canvas style="background-color: rgba(206, 172, 172, 0.5);">
 
             <button class="close-button" aria-label="Close menu" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>
 
             <!--My menu-->
-            <ul class="vertical menu">
+            <ul class="vertical menu" >
                 
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="Resume.html">Resume</a></li>
@@ -30,34 +30,47 @@
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
 
+                        <!--the toggle nav button-->
+                        <div class="grid-x grid-padding-x" id="top">
+                            <button type="button" class="cell large-auto button" data-toggle="offCanvas" style="background-color: rgba(37, 2, 2, 0.5);">Open Menu</button>
+                        </div>
 
+                        
 
-            <!--row 1 for the header,title etc-->
-            <div class="grid-x grid-padding-x">
-
-                <div class="cell small-auto large-12 myheadercss ">
-
-                    <div style="text-align: center; margin: 50px;" class="header-container">
-
-                        <ul>
-                            <li style="display: inline;" class="changeS"><b>Fun stuff</b><a href="fun.html"><img src="t.jpg" alt="fun stuff" style="width: 20%; padding-right: 20px;" /></a></li>
-                            <li style="display: inline;" class="changeS"><b>Resume</b><a href="Resume.html"><img src="resImage.jpg" alt="resume" style="width: 20%; padding-right: 20px;" /></a></li>
-                            <li style="display: inline;" class="changeS"><b>Project</b><a href="projects.html"><img src="proj.jpeg" alt="projects" style="width: 20%; padding-right: 20px;" /></a></li>
-                            
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
+                        <h3 style="text-align: center;color: whitesmoke;">Hey there, I am Prince Sarpong</h3>
 
             <!--the toggle nav button-->
             <div class="grid-x grid-padding-x" style="background-color: rgba(0, 0, 0,0.5);">
+              
                 <div class="cell small-auto large-12 myheadercss ">
+                    <h4 style="text-align: center;">About Me</h4>
+                    <p style="text-align: center;">If you're just curious about me, or you just want to grab my resume, you're in the right spot.</p>
+        
+                    <div style="text-align: center; margin: 50px;" class="header-container">
 
-                    <div><img src="img1.jpg" style="width: 300px; height:350px; float: left; margin: 10px;"/></div>
-                    <p style="color: white; padding: 50px;">
+                        <ul>
+                            <div style="text-align: center;">   
+                                <li style="display: inline; margin: 10px;" class="changeS"><a href="#myStoryContent"><img src="abtme.jpg" alt="fun stuff" style="width: 120px; height: 120px; border: 1px dashed red; padding: 5px;" /></a></li>
+                                <p><b>My story</b></p>
+                            </div>
+
+                            <div style="text-align: center;">
+                                <li style="display: inline; margin: 10px;" class="changeS"><a href="Resume.html"><img src="resImage.jpg" alt="resume" style="width: 120px; height: 120px;  border: 1px dashed red; padding: 5px;" /></a></li>
+                                <p><b>Resume</b></p>
+                            </div>                                                        
+                        </ul>
+
+
+                    </div>                   
+                </div>
+
+            </div>
+<!--I want to hide this section and only show it when i click on my story image-->
+            <div class = "grid-padding-x" style="background-color: rgba(37, 2, 2, 0.5); " id="myStoryContent">
+                <div class="cell small-auto large-12">
+
+                    <div><img src="img1.jpg" style="width: 300px; height:350px; float: left; margin: 25px;"/></div>
+                    <p style="color: white;background-color: rgba(20, 20, 20, 0.5); padding: 50px;">
                         Meet Prince, a unique individual who embodies the qualities of quiet introspection and a delightful sense of humor. With a natural curiosity that drives him forward, Prince is a goal-oriented individual who consistently seeks growth and self-improvement.
 
                         One of Prince's passions is soccer. Whether on the field or cheering for his favorite teams, soccer is more than just a sport for him; it's a source of joy and camaraderie. But it's not all about athleticism—Prince also has an affinity for comedy. He has an uncanny ability to find humor in everyday situations and use it to bring smiles to those around him.
@@ -70,16 +83,14 @@
 
                     </p>
 
-
-
+                    
+                        <div style="text-align: center;"><a href="#top"><button type="button" style="background-color:black; color: white;">Back to top</button></a></div>
+                    
                 </div>
-                </div>
-
-
-            <!--the toggle nav button-->
-            <div class="grid-x grid-padding-x">
-                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
             </div>
+
+
+
 
         </div>
     </div>

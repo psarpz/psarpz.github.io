@@ -10,7 +10,7 @@
 <body>
     <div class="off-canvas-wrapper">
         <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-bottom" id="offCanvas" data-off-canvas>
+        <div class="off-canvas position-top" id="offCanvas" data-off-canvas>
             <!-- Close button -->
             <button class="close-button" aria-label="Close menu" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
@@ -19,13 +19,21 @@
             <!-- Menu -->
             <ul class="vertical menu">
                 <li><a href="index.html">Homepage</a></li>
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="fun.html">Fun</a></li>
-                <li><a href="about.html">About Me</a></li>
+             
             </ul>
         </div>
+
+        
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
+
+            <!--the toggle nav button-->
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas" style="background-color: rgba(37, 2, 2, 0.5);">Open Menu</button>
+            </div>
+
             <!-- main content within a `grid-container` -->
             <div class="grid-container">
                 <!-- `grid-x` represents a row -->
@@ -103,15 +111,15 @@
                             </tbody>
 
                         </table>
+
+                        <div style="text-align: center;"><a href="#top"><button type="button" style="background-color:black; color: white;">Back to top</button></a></div>
                     </div>
-                   
+
                 </div>
 
                
 
-                <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -5,57 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="indexStyle.css">
 </head>
 <body>
     <div class="off-canvas-wrapper">
-        <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-            <!-- Close button -->
+
+        <!--Homepage Navbar-->
+        <div class="off-canvas position-top" id="offCanvas" data-off-canvas style="background-color: rgba(206, 172, 172, 0.5);">
+
             <button class="close-button" aria-label="Close menu" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>
 
-            <!-- Menu -->
-            <ul class="vertical menu">
-                <li><a href="#">Foundation</a></li>
-                <li><a href="#">Dot</a></li>
-                <li><a href="#">ZURB</a></li>
-                <li><a href="#">Com</a></li>
-                <li><a href="#">Slash</a></li>
-                <li><a href="#">Sites</a></li>
+            <!--My menu-->
+            <ul class="vertical menu" >
+                
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="fun.html">Fun stuff</a></li>
             </ul>
+
         </div>
+
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
-            <!-- main content within a `grid-container` -->
-            <div class="grid-container">
-                <!-- `grid-x` represents a row -->
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 large-4" style="background-color: #ADD8E6;">Small 6 / Large 4</div>
-                    <div class="cell small-6 large-8" style="background-color: #90EE90;">Small 6 / Large 8</div>
-                </div>
 
-                <div class="grid-x grid-padding-x">
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">One</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Two</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Three</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Four</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Five</div>
-                </div>
+                        <!--the toggle nav button-->
+                        <div class="grid-x grid-padding-x" id="top">
+                            <button type="button" class="cell large-auto button" data-toggle="offCanvas" style="background-color: rgba(37, 2, 2, 0.5);">Open Menu</button>
+                        </div>
 
-                <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+                        
+
+                        <h3 style="text-align: center;color: whitesmoke;">Projects</h3>
+
+            <!--Project 1-->
+            <div class="grid-x grid-padding-x" style="background-color: rgba(0, 0, 0,0.8);">
+              
+                <div class="cell small-auto large-12 myheadercss " style="text-align: center; border: 1px dashed yellow;">
+                    <br/><h5 >Hello World</h5>
+                    <p>This was my very first project and it was when i learnt to write my very first code.
+                        <br/>Attached is a snippet of the output and code.It basically prints out "Hello World!" on the console
+                     </p>
+                     <div><img src="myfirstproject.png" style="width: 80%;"/></div>            
+
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- include before closing <body> tag -->
+            <!--Project 2-->
+            <div class="grid-x grid-padding-x" style="background-color: rgba(0, 0, 0,0.8);">
+              
+                <div class="cell small-auto large-12 myheadercss " style="text-align: center; border: 1px dashed yellow;">
+                    <br/><h5> Rock,Paper, Scissors Game</h5>
+                    <div>
+                        <ul style="list-style-type: none;">
+                            <li>Rock, Paper, Scissors is a popular game played in many households or places.</li>
+                            <li>It is often used as a decision-making tool between two people.</li>
+                            <li>The game is based on the idea of random chance and is typically played by making one of three possible hand shapes:
+                                <li> Rock, Paper, or Scissors.</li>
+                            </li>
+                            <li>Here's how the game works:</li>
+                            <li>Rock beats Scissors (Rock crushes Scissors).</li>
+                            <li>Scissors beat Paper (Scissors cut Paper).</li>
+                            <li>Paper beats Rock (Paper covers Rock).</li>
+                            <li>Eg, if one person chooses Rock and the other chooses Scissors, the player with Rock wins because Rock beats Scissors.</li>
+                            <li>Attached is a snippet of the code and the output of the game in a terminal/console.</li>
+                        </ul>
+                    </div>
+                    
+                    <div><img src="rps.png" style="width: 80%;"/></div>       
+
+                </div>
+            </div>
+
+            <!--Project 3-->
+            <div class="grid-x grid-padding-x" style="background-color: rgba(0, 0, 0,0.8);">
+              
+                <div class="cell small-auto large-12 myheadercss " style="text-align: center; border: 1px dashed yellow;">
+                    <br/><h5>Guess the right number game.</h5>
+                    <p>Guess the Right Number game is a common and straightforward number-guessing game that is often used for entertainment purposes.<br/>
+                        The game typically follows these basic rules:<br/>
+                        <span>
+                            The game selects a random number within a specified range (e.g., between 1 and 100).With my version, the player's objective is to guess the selected number within three(3) attempts.
+                            After each guess, the game provides feedback to the player, indicating whether the guessed number is too high, too low, or correct.The player continues guessing until they either correctly guess the number or exhaust their allowed number of attempts.<br/>
+                            The game then announces whether the player has won (guessed the number) or lost (failed to guess the number within the allowed attempts).
+                        </span>
+                        
+
+                    </p>
+                    <div style="text-align: center;"> <img src="guessingGame.png" style="width: 80%;" /> </div>
+  
+                </div>
+            </div>
+
+            <!--Project 4-->
+            <div class="grid-x grid-padding-x" style="background-color: rgba(0, 0, 0,0.8);">
+              
+                <div class="cell small-auto large-12 myheadercss " style="text-align: center; border: 1px dashed yellow;">
+                    <br/><h5>Many password resets at a go vis powershell.</h5>
+                    <div>
+                        <ul style="list-style-type: none;">
+                            <li>Sets the target domain and prompts the user to enter their credentials.</li>
+                            <li>Defines a function Get-RandomCharacters to generate random characters for passwords.</li>
+                            <li>Defines a function Scramble-Password to scramble a password's characters.</li>
+                            <li>Defines the Update-Password function to reset a user's password, including generating a new password and updating user properties.</li>
+                            <li>Reads a list of usernames from a CSV file and stores it in the $Usrs variable.</li>
+                            <li>Retrieves a list of domains in the Active Directory forest and stores it in the $srvs variable.</li>
+                            <li>Checks if the CSV file containing usernames exists. If not, it displays an error message.</li>
+                            <li>Loops through each domain and each username, validates the existence of the user, and attempts to reset their password using the Update-Password function.</li>
+                            <li>Logs successful password resets to a CSV file named "RandomBulkPWGood.csv" and logs errors to "RandomBulkPWError.csv."</li>
+                            <li>Calculates the total number of password resets performed and displays it.</li>
+                            <li>Indicates the completion of the script and the location of the log file.</li>
+                        </ul>
+                    </div>
+
+                    <div><img src="password.png" style="width: 80%; "></div>      
+                    <br/>
+                    <div style="text-align: center;"><a href="#top"><button type="button" style="background-color:black; color: white;">Back to top</button></a></div>   
+
+                </div>
+            </div>
+
+
+    </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script type="application/javascript">
         $(document).foundation();
     </script>
+
 </body>
 </html>
+
